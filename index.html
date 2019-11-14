@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WeCon - Weight Converter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="main.css" rel='stylesheet' type='text/css'>
+    <script src="main.js"></script>
+    <!--import bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+ 
+</head>
+
+   
+<body id= "mybody">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="text-center mb-3">WeCon - Weight Converter</h2>
+
+<form class="form-group">
+<input id="lbsinput" type="number" onchange="man()" class="form-control form-control-lg" placeholder="Enter Pounds">
+
+
+</form>
+
+        <div id="output">
+
+
+<div class="card card-success mb-2">
+    <div class="card-block">
+<h4 class="values">Grams:</h4>
+    <div class="values" id="gramsoutput"> </div>
+</div>
+</div>    
+
+<div class="card card-danger mb-2">
+        <div class="card-block">
+    <h4 class="values">Kilograms:</h4>
+        <div class="values"  id="kgramsoutput"> </div>
+    </div>
+    </div>    
+    
+
+    <div class="card card-primary mb-2">
+            <div class="card-block">
+        <h4 class="values">Ounces:</h4>
+            <div class="values" id="ouncesoutput"> </div>
+        </div>
+        </div>    
+        
+
+
+
+</div>    
+
+
+
+
+
+
+
+        </div>
+
+       </div>
+</div>
+<script>
+hide();
+
+var man = function() {
+
+    var pounds = document.getElementById("lbsinput").value;
+    men(pounds);
+
+}
+
+</script>
+
+
+</body>
+</html>
